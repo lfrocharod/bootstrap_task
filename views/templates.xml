@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="portal_my_home" inherit_id="portal.portal_my_home" name="portal_my_home">
+        <xpath expr="//div[hasclass('o_portal_my_home')]" position="after">
+            <div class="o_portal_my_square">
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+                <div class="o_portal_sub_square">
+                    Danger
+                </div>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="portal_layout" inherit_id="portal.portal_layout" name="portal_layout">
+        <xpath expr="//div[hasclass('o_portal_my_security')]" position="after">
+            <div class="o_portal_my_widget">
+                <h4 t-esc="title"/>
+                <hr class="mt-1 mb-1"/>
+                <button type="button" class="btn btn-primary" t-on-click='_onClickButton'>Click me!</button>
+            </div>
+        </xpath>
+    </template>
+</odoo>
